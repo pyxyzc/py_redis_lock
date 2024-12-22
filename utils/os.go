@@ -8,6 +8,7 @@ import (
 	"strings"
 )
 
+// GetCurrentProcessID 获取当前的进程ID
 func GetCurrentProcessID() string {
 	return strconv.Itoa(os.Getpid())
 }

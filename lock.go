@@ -79,6 +79,7 @@ func (r *RedisLock) Lock(ctx context.Context) (err error) {
 	// 基于阻塞模式持续轮询取锁
 	err = r.blockingLock(ctx)
 	return
+
 }
 
 func (r *RedisLock) tryLock(ctx context.Context) error {
